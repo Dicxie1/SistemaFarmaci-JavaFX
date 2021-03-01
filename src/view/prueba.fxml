@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="108.0" minWidth="607.0" prefHeight="427.0" prefWidth="1106.0" styleClass="color-orange" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Prueba">
+   <children>
+      <Pane layoutX="32.0" layoutY="14.0" onMouseClicked="#handlerMouseClicked" styleClass="info-box">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" text="Empleados">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="label-header" />
+                  <String fx:value="font-size-15" />
+               </styleClass>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="12.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/employees.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="67.0" layoutY="29.0" styleClass="box-label" text="100">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="246.0" layoutY="14.0" onMouseClicked="#handlerMouseClicked" styleClass="info-box">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Productos">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="label-header" />
+                  <String fx:value="font-size-15" />
+               </styleClass>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="12.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/product.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="66.0" layoutY="29.0" style="-fx-border-color: none; -fx-border-style: none;" text="1230">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="460.0" layoutY="14.0" onMouseClicked="#handlerMouseClicked" styleClass="info-box">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Sucursal">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="label-header" />
+                  <String fx:value="font-size-15" />
+               </styleClass>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="12.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sucursal.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="66.0" layoutY="29.0" style="-fx-border-color: none; -fx-border-style: none;" text="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane layoutX="672.0" layoutY="11.0" onMouseClicked="#handlerMouseClicked" styleClass="info-box">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Proveedores">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="label-header" />
+                  <String fx:value="font-size-15" />
+               </styleClass>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="12.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sucursal.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="66.0" layoutY="29.0" style="-fx-border-color: none; -fx-border-style: none;" text="20">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <ListView fx:id="lstProductos" layoutX="22.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="32.0" layoutY="129.0" styleClass="h1" text="Top de Productos" />
+      <ListView fx:id="lstStockMinimo" layoutX="246.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="256.0" layoutY="129.0" styleClass="h1" text="Stock minimo" />
+      <PieChart fx:id="sucursalPieChart" layoutX="460.0" layoutY="124.0" prefHeight="231.0" prefWidth="294.0" title="ventas por sucursal" />
+      <PieChart fx:id="empleadoPieChart" layoutX="800.0" layoutY="124.0" prefHeight="231.0" prefWidth="278.0" title="ventas por empleado" />
+   </children>
+</AnchorPane>

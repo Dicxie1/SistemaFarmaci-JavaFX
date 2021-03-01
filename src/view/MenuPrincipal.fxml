@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="648.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuPrincipalController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="CardPane">
+         <children>
+            <Pane minHeight="150.0" prefHeight="150.0" prefWidth="200.0" styleClass="InfoPane">
+               <children>
+                  <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/triangle-geometric-abstract.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D height="150.0" minX="1.0" minY="140.0" width="200.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="lblUsuario" layoutY="109.0" onMouseClicked="#handlerLblUsuarioMouseCliked" text="Usuario">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.5142857142857143" startY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#390808" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnInicio" mnemonicParsing="false" onAction="#handlerBtnInicioOnAction" text="Inicio" />
+            <Button fx:id="btnFarmacos" mnemonicParsing="false" text="Farmacos" />
+            <Button fx:id="btnProveedores" mnemonicParsing="false" text="Proveedores" />
+            <Button fx:id="btnCliente" mnemonicParsing="false" text="Cliente" />
+            <Button fx:id="btnFacturas" mnemonicParsing="false" text="Facturas" />
+            <Button fx:id="btnSucursal" mnemonicParsing="false" text="Sucursales" />
+            <Button fx:id="btnUsuarios" minHeight="40.0" mnemonicParsing="false" text="Usuarios" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="pnFormulario" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox styleClass="titleView">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label fx:id="lblLabelTitleBar" text="Inicio" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane fx:id="formCenter" styleClass="color-purple-dark" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <MenuBar styleClass="color-skyblue" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

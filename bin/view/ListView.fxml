@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="397.0" prefWidth="475.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ChoiceBox layoutX="2.0" layoutY="2.0" prefHeight="28.0" prefWidth="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <!-- 
+      <items>
+      	<FXCollections fx:factory="observableArrayList">
+      		<String fx:value="400.0"/>
+      		<String fx:value="400.0"/>
+      		<String fx:value="400.0"/>
+      		<String fx:value="400.0"/>
+      	</FXCollections>
+      </items>
+       -->
+      </ChoiceBox>
+      <Pagination layoutY="52.0" maxPageIndicatorCount="200" prefHeight="113.0" prefWidth="200.0" styleClass="color-purple-dark" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="52.0" />
+      <PasswordField layoutX="51.0" layoutY="128.0" />
+   </children>
+</AnchorPane>

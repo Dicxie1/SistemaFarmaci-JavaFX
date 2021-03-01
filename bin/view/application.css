@@ -1,0 +1,173 @@
+/*Defaut configurtion of the component */
+.root{
+	-fx-font-family: "Arial";
+	-fx-font-size: 14px;
+	
+	/*Definition of the palette of color for the application */
+	basepurple: rgb(53,36,72);
+	skyblue: rgb(110,239,235);
+	baseorange: #F59E03;
+	lightpurple: rgb(128,0,128);
+	
+}
+.font-size-10{
+	-fx-font-size: 10;
+}
+.font-size-15{
+	-fx-font-size: 15;
+}
+.font-size-20{
+	-fx-font-size: 20;
+}
+.h1{
+	-fx-font-size: 20;
+	-fx-font-weight: bolder;
+}
+.button{
+	-fx-pref-width: 90;	
+}
+.textfield{
+	-fx-pref-width:180;
+}
+TextField, ChoiceBox, ColorPicker, DatePicker, ComboBox{
+	-fx-pref-width: 180;
+}
+
+.textfield, .button, .choicebox, ColorPicker, .arrow-button,.date-picker, .text-field, 
+.combo-box  {
+	-fx-background-radius:60;
+	-fx-border-radius: 60;
+}
+/* declaration of the class of color */
+.color-purple-dark{
+	-fx-background-color: basepurple;
+}
+.color-skyblue{
+	-fx-background-color: skyblue;
+}
+.color-orange{
+	-fx-background-color: baseorange;
+}
+
+.button-primary{
+	-fx-background-color: #00AAE4;
+	-fx-text-fill:#FFFFFF;	
+}
+
+Button.button-primary:focused{
+	-fx-border-color: #2271B3;
+	-fx-background-color: #51D1F6;
+	-fx-effect: innershadow(three-pass-box, #2271B3, 1,0.5,0.5,0.5 )
+}
+.button-danger{
+	-fx-background-color: #E61919;
+	-fx-text-fill:#FFFFFF;
+}
+Button.button-danger:focused{
+	-fx-border-color: #CC0000;
+	-fx-background-color: #FF4040;
+	-fx-effect: innershadow(three-pass-box, #CC0000, 2,0.5,0.5,0.5)
+}
+
+TextField.textfield:focused, PasswordField.textfield:focused{
+	-fx-border-color: #32CD32;
+	-fx-effect: innershadow(three-pass-box, #32CD32, 1,0.5,0.5,0.5 )
+}
+
+.CardPane{
+	-fx-background-color: #2271B3;
+}
+.CardPane > Button{
+	-fx-stroke-width: 0;
+	-fx-border-radius: 0;
+	-fx-background-radius:0;
+	-fx-border-width:0px;
+	-fx-min-width:200.0;
+	-fx-min-height:40.0;
+	-fx-background-color: #2271B3;
+	-fx-text-fill: #FFFFFF;
+	-fx-alignment: BASELINE_LEFT;
+}
+.CardPane > Button, .CardPane Label{
+	-fx-pref-width:200.0;
+	-fx-pref-height: 40.0;
+}
+
+.InfoPane > Label{
+	-fx-focus-traversable: true;
+	-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, rgb(0,0,0,1) 0%, rgb(0,0,0,0.3) 70%);
+}
+.InfoPane Label:hover{
+	-fx-background-color: rgb(0,0,0,0.5);
+	-fx-underline: true;
+}
+.CardPane Button:hover{
+	-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #0061A9 0%, rgb(225,225,225,0.3) 70%);
+}
+
+.CardPane Button:pressed{
+	-fx-background-color:linear-gradient(from 0% 100% to 0% 0%, #0E294B 0%, rgb(225,225,225,0.3) 70%);
+}
+.CardPane Button:focused{
+	-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, rgb(16,44,84,1) 0%, rgb(16,44,84,0.3) 60%);
+}
+
+.InfoPane  {
+	-fx-min-width: 200.0;
+	-fx-min-height: 150.0;
+	-fx-pref-width: 200.0;
+	-fx-pref-height: 150.0;
+}
+.InfoPane > Label{
+	-fx-text-fill: #FFFFFF;
+	-fx-backgroud-color: rgb(0,0,0,0.4);
+}
+
+Pane.InfoPane > ImageView {
+	-fx-pref-height: 300;
+}
+.titleView {
+	-fx-background-color:rgb(110,239,235);
+	-fx-pref-height: 110;
+	-fx-width: 100 %;
+	-fx-height: 100 %;
+}
+
+.info-box{
+	-fx-background-color: rgb(255,165,0);
+	-fx-background-radius:30;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 50, 0.02, 0, 0);
+	-fx-pref-width:180;
+}
+.label-header{
+	-fx-font-weight: bolder;
+	
+}
+.box-label{
+	-fx-border-color: none;
+	-fx-border-style: none;
+}
+
+TabPane, *.tab-header-background {
+	-fx-background-color:rgb(53,36,72);
+}
+*.tab-header-area{
+	 -fx-background-color: #462E60;
+}
+.tab{
+	-fx-background-color:#805890;
+}
+.tab-pane{
+	-fx-background-color:#F59E03; /*#462E60 */
+}
+
+.tab:selected, .tab:focused, .tab-label:focused, .tab-label:selected  .control-buttons-tab:focused, .tab-down-button:focused {
+	-fx-background-color:#F59E03;
+	-fx-border-color:#F5E743;
+	-fx-effect: innershadow(three-pass-box, #F59E03, 5,0.5,0.5,0.5)
+}
+.UserPicture{
+	-fx-pref-height: 200.0;
+	-fx-fit-height: 200.0;
+	-fx-fit-width: 150.0;
+}
