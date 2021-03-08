@@ -23,9 +23,9 @@ public class MenuPrincipalController implements Initializable {
 	@FXML public Button btnInicio;
 	@FXML public Button btnProveedores;
 	@FXML public Button btnCliente;
-	@FXML public Button btnFactura;
+	@FXML public Button btnFacturas;
 	@FXML public Button btnSucursal;
-	@FXML public Button btnUsuario;
+	@FXML public Button btnUsuarios;
 	@FXML public Button btnFarmacos;
 	@FXML public Label lblLabelTitleBar;
 	@FXML public Label lblInfoUsuario;
